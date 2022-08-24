@@ -34,10 +34,42 @@ struct ContentView: View {
                 VStack {
                     HStack {
                         Spacer()
-                        ForEach(tabs)
+                        ForEach(tabs, id: \.id) { tab in
+                            Image(systemName: tab.image)
+                                .font(.system(size: 25))
+                                .foregroundColor(tab.id == selectedTab ? tab.color : Color.gray.opacity(0.7))
+                                .onTapGesture {
+                                    withAnimation(.easeInOut(duration: 0.5)) {
+                                        selectedTab = tab.id
+                                    }
+                                }
+                            Spacer()
+                        }
                     }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 45)
+                    TabView(selection: $selectedTab) {
+                        HomeView()
+                            .tag(0)
+                        LikesView()
+                            .tag(1)
+                        MessagesView()
+                            .tag(2)
+                        ProfileView()
+                            .tag(3)
+                    }
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 }
+                .background(Color(UIColor.systemGroupedBackground).edgesIgnoringSafeArea(.all))
             }
+        }.onAppear {
+            onAppearCalled()
+        }
+    }
+    
+    private func onAppearCalled() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            isLoading = false
         }
     }
 }
