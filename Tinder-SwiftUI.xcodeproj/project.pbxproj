@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2CA41F28B6016000D38049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA41E28B6016000D38049 /* Assets.xcassets */; };
 		8BE42B8A28B4E64B0048B79B /* Tinder_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE42B8928B4E64B0048B79B /* Tinder_SwiftUIApp.swift */; };
-		8BE42B8E28B4E64D0048B79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE42B8D28B4E64D0048B79B /* Assets.xcassets */; };
 		8BE42B9128B4E64D0048B79B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE42B9028B4E64D0048B79B /* Preview Assets.xcassets */; };
 		8BFDD43B28B4E83400F336E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDD43A28B4E83400F336E8 /* ContentView.swift */; };
 		8BFDD43D28B4E83C00F336E8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDD43C28B4E83C00F336E8 /* LoadingView.swift */; };
@@ -23,9 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B2CA41E28B6016000D38049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../Downloads/Tinder-master/TinderClone/Assets.xcassets"; sourceTree = "<group>"; };
 		8BE42B8628B4E64B0048B79B /* Tinder-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE42B8928B4E64B0048B79B /* Tinder_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinder_SwiftUIApp.swift; sourceTree = "<group>"; };
-		8BE42B8D28B4E64D0048B79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE42B9028B4E64D0048B79B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BFDD43A28B4E83400F336E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BFDD43C28B4E83C00F336E8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				8BFDD43828B4E82300F336E8 /* Model */,
 				8BFDD43728B4E81E00F336E8 /* Extension */,
 				8BFDD43928B4E82900F336E8 /* Views */,
-				8BE42B8D28B4E64D0048B79B /* Assets.xcassets */,
+				8B2CA41E28B6016000D38049 /* Assets.xcassets */,
 				8BE42B8928B4E64B0048B79B /* Tinder_SwiftUIApp.swift */,
 				8BE42B8F28B4E64D0048B79B /* Preview Content */,
 			);
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE42B9128B4E64D0048B79B /* Preview Assets.xcassets in Resources */,
-				8BE42B8E28B4E64D0048B79B /* Assets.xcassets in Resources */,
+				8B2CA41F28B6016000D38049 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
