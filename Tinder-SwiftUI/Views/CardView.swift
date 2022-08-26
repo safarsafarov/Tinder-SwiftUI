@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct CardView: View {
     var card: Card
     @State private var translation: CGSize = .zero
